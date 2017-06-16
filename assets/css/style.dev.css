@@ -18,6 +18,7 @@ h1 {
 * {
   margin: 0;
   padding: 0;
+  outline: 1px solid #f00;
 }
 /* line 9, assets\less\common.less */
 ul,
@@ -284,7 +285,6 @@ body .wrap {
   width: 102%;
   text-align: left;
   font-size: 0;
-  background-color: green;
 }
 /* line 164, assets\less\common.less */
 .news .news_wrap section .ad {
@@ -330,43 +330,138 @@ body .wrap {
 .news .news_wrap section .notice {
   width: 295px;
   height: 320px;
-  background-color: yellow;
+  background-color: #fff;
+  outline: 1px solid #d4d4d4;
   display: inline-block;
   margin-right: 20px;
   vertical-align: top;
 }
 /* line 187, assets\less\common.less */
-.news .news_wrap section .notice .notice_01 {
+.news .news_wrap section .notice .tab {
+  width: 100%;
+  height: 40px;
   font-size: 14px;
+  background-color: #c7c7c7;
+}
+/* line 189, assets\less\common.less */
+.news .news_wrap section .notice .tab ul {
+  width: 100%;
+  font-size: 0;
+}
+/* line 190, assets\less\common.less */
+.news .news_wrap section .notice .tab ul li {
+  width: 50%;
+  height: 40px;
+  display: inline-block;
+  font-size: 14px;
+  text-align: center;
+  line-height: 40px;
 }
 /* line 191, assets\less\common.less */
+.news .news_wrap section .notice .tab ul li a {
+  color: #fff;
+}
+/* line 192, assets\less\common.less */
+.news .news_wrap section .notice .tab ul li a:hover {
+  color: #000;
+}
+/* line 194, assets\less\common.less */
+.news .news_wrap section .notice .tab ul li:hover {
+  background-color: #f99d1b;
+}
+/* line 200, assets\less\common.less */
+.news .news_wrap section .notice #notice_01 {
+  width: 100%;
+  height: 100p%display: block;
+  color: #666;
+}
+/* line 201, assets\less\common.less */
+.news .news_wrap section .notice #notice_01 ul {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+/* line 203, assets\less\common.less */
+.news .news_wrap section .notice #notice_01 ul li {
+  font-size: 14px;
+  line-height: 30px;
+  display: block;
+}
+/* line 206, assets\less\common.less */
+.news .news_wrap section .notice #notice_02 {
+  width: 100%;
+  height: 100p%display: block;
+  color: #666;
+  display: none;
+}
+/* line 207, assets\less\common.less */
+.news .news_wrap section .notice #notice_02 ul {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+/* line 209, assets\less\common.less */
+.news .news_wrap section .notice #notice_02 ul li {
+  font-size: 14px;
+  line-height: 30px;
+  display: block;
+}
+/* line 213, assets\less\common.less */
 .news .news_wrap section .event {
   width: 295px;
   height: 320px;
   background-color: yellow;
+  z-index: 1;
   display: inline-block;
   background-size: cover;
   background-position: center;
   background-image: url("../images/main/news_event_con01.jpg");
   vertical-align: top;
 }
-/* line 195, assets\less\common.less */
+/* line 216, assets\less\common.less */
+.news .news_wrap section .event h2 {
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+/* line 218, assets\less\common.less */
 .news .news_wrap section .story {
   width: 295px;
   height: 200px;
   background-color: yellow;
+  z-index: 1;
   display: inline-block;
   margin-right: 20px;
+  margin-top: 20px;
   background-size: cover;
   background-position: center;
   background-image: url("../images/main/news_story_con01.jpg");
-  vertical-align: top;
 }
-/* line 199, assets\less\common.less */
+/* line 221, assets\less\common.less */
+.news .news_wrap section .story p {
+  width: 295px;
+  height: 200px;
+  background-color: rgba(249, 157, 27, 0.3);
+  z-index: 100;
+}
+/* line 222, assets\less\common.less */
+.news .news_wrap section .story p h2 {
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 200;
+}
+/* line 226, assets\less\common.less */
 .news .news_wrap section .help {
   width: 295px;
   height: 200px;
   background-color: yellow;
+  z-index: 1;
   display: inline-block;
   margin-right: 20px;
   margin-top: 20px;
@@ -374,7 +469,24 @@ body .wrap {
   background-position: center;
   background-image: url("../images/main/news_help_con01.jpg");
 }
-/* line 203, assets\less\common.less */
+/* line 230, assets\less\common.less */
+.news .news_wrap section .help div h2 {
+  text-align: center;
+  line-height: 40px;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  font-size: 14px;
+}
+/* line 231, assets\less\common.less */
+.news .news_wrap section .help div h2:before {
+  content: "1";
+  display: inline-block;
+  height: 100%;
+  vertical-align: bottom;
+}
+/* line 240, assets\less\common.less */
 .news .news_wrap section .faq {
   width: 610px;
   height: 200px;
@@ -383,34 +495,103 @@ body .wrap {
   margin-top: 20px;
   vertical-align: top;
 }
-/* line 212, assets\less\common.less */
+/* line 242, assets\less\common.less */
+.news .news_wrap section .faq .tab {
+  width: 105px;
+  height: 100%;
+  float: left;
+}
+/* line 243, assets\less\common.less */
+.news .news_wrap section .faq .tab ul {
+  width: 100%;
+}
+/* line 245, assets\less\common.less */
+.news .news_wrap section .faq .tab ul a li {
+  background-color: #ababab;
+  font-size: 14px;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+}
+/* line 247, assets\less\common.less */
+.news .news_wrap section .faq .tab ul a li span {
+  margin-left: 10px;
+}
+/* line 249, assets\less\common.less */
+.news .news_wrap section .faq .tab ul a li:hover {
+  background-color: #f99d1b;
+}
+/* line 256, assets\less\common.less */
+.news .news_wrap section .faq .tab ul li:hover {
+  background-color: #f99d1bb;
+}
+/* line 257, assets\less\common.less */
+.news .news_wrap section .faq .tab ul li:hover a {
+  color: #fff;
+  margin-left: 10px;
+}
+/* line 262, assets\less\common.less */
+.news .news_wrap section .faq #faq_01 {
+  margin-left: 109px;
+}
+/* line 263, assets\less\common.less */
+.news .news_wrap section .faq #faq_01 ul {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+/* line 264, assets\less\common.less */
+.news .news_wrap section .faq #faq_01 ul li {
+  line-height: 30px;
+  font-size: 14px;
+  color: #666;
+  width: 100%;
+}
+/* line 270, assets\less\common.less */
+.news .news_wrap section .faq #faq_02 {
+  margin-left: 109px;
+  background-color: blue;
+  display: none;
+}
+/* line 271, assets\less\common.less */
+.news .news_wrap section .faq #faq_02 ul {
+  margin-left: 20px;
+  margin-top: 20px;
+  background-color: green;
+}
+/* line 272, assets\less\common.less */
+.news .news_wrap section .faq #faq_02 ul li {
+  line-height: 30px;
+  font-size: 14px;
+  color: #666;
+}
+/* line 287, assets\less\common.less */
 .liquor {
   height: 100%;
   background-color: #e5edd3;
 }
-/* line 213, assets\less\common.less */
+/* line 288, assets\less\common.less */
 .liquor .liquor_wrap {
   margin: 0 auto;
   width: 100%;
   text-align: center;
   padding-top: 100px;
 }
-/* line 215, assets\less\common.less */
+/* line 290, assets\less\common.less */
 .liquor .liquor_wrap .title h1 {
   font-size: 56px;
   color: #000;
 }
-/* line 216, assets\less\common.less */
+/* line 291, assets\less\common.less */
 .liquor .liquor_wrap .title h2 {
   font-size: 18px;
   color: #6a4f29;
   margin-top: 20px;
 }
-/* line 218, assets\less\common.less */
+/* line 293, assets\less\common.less */
 .liquor .liquor_wrap ul li img {
   margin-top: 45%;
 }
-/* line 219, assets\less\common.less */
+/* line 294, assets\less\common.less */
 .liquor .liquor_wrap ul li {
   width: 20%;
   height: 470px;
@@ -418,66 +599,66 @@ body .wrap {
   font-size: 16px;
   color: #fff;
 }
-/* line 220, assets\less\common.less */
+/* line 295, assets\less\common.less */
 .liquor .liquor_wrap ul {
   width: 100%;
   margin-top: 100px;
   background-color: white;
   font-size: 0;
 }
-/* line 221, assets\less\common.less */
+/* line 296, assets\less\common.less */
 .liquor .liquor_wrap ul .story {
   background-size: cover;
   background-position: center;
   background-image: url("../images/main/liquor_photo_01.jpg");
 }
-/* line 223, assets\less\common.less */
+/* line 298, assets\less\common.less */
 .liquor .liquor_wrap ul .business {
   background-size: cover;
   background-position: center;
   background-image: url("../images/main/liquor_photo_02.jpg");
 }
-/* line 225, assets\less\common.less */
+/* line 300, assets\less\common.less */
 .liquor .liquor_wrap ul .study {
   background-size: cover;
   background-position: center;
   background-image: url("../images/main/liquor_photo_03.jpg");
 }
-/* line 227, assets\less\common.less */
+/* line 302, assets\less\common.less */
 .liquor .liquor_wrap ul .mark {
   background-size: cover;
   background-position: center;
   background-image: url("../images/main/liquor_photo_04.jpg");
 }
-/* line 229, assets\less\common.less */
+/* line 304, assets\less\common.less */
 .liquor .liquor_wrap ul .make {
   background-size: cover;
   background-position: center;
   background-image: url("../images/main/liquor_photo_05.jpg");
 }
-/* line 241, assets\less\common.less */
+/* line 316, assets\less\common.less */
 footer .footer_wrap {
   margin: 0 auto;
   width: 1240px;
   height: 170px;
 }
-/* line 243, assets\less\common.less */
+/* line 318, assets\less\common.less */
 footer .footer_wrap div {
   border-bottom: 1px solid #d3d3d3;
   padding: 20px 0 30px;
 }
-/* line 245, assets\less\common.less */
+/* line 320, assets\less\common.less */
 footer .footer_wrap div ul li {
   color: #000;
   padding-right: 20px;
   font-size: 16px;
 }
-/* line 247, assets\less\common.less */
+/* line 322, assets\less\common.less */
 footer .footer_wrap div select {
   float: right;
   font-size: 16px;
 }
-/* line 253, assets\less\common.less */
+/* line 328, assets\less\common.less */
 footer .footer_wrap span {
   font-size: 13px;
   color: #666;

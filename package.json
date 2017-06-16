@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/youngcheol2-jung/portfolio.git"
+    "url": "git+https://github.com/youngcheol-jung/portfolio.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/youngcheol2-jung/portfolio/issues"
+    "url": "https://github.com/youngcheol-jung/portfolio/issues"
   },
-  "homepage": "https://github.com/youngcheol2-jung/portfolio#readme",
+  "homepage": "https://github.com/youngcheol-jung/portfolio#readme",
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-less": "^1.4.1",
