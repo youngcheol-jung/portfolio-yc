@@ -1,314 +1,38 @@
 
-@font-face{
-   font-family: "Daum";
-   src:url("../font/Daum_Regular.eot") format("truetype");
-   }
-*{margin: 0;padding:0; outline: 1px solid #f00;
-
-    }
-ul,ol,li{list-style:none; display:inline-block;}
-a{text-decoration: none;color:#000;}
 
 html,body{
     height: 100%;
-    font-family: 'daum';
+    font-family: 'nanumgothic';
     font-size: 16px;
-
+    color:#444;
 }
 
-body{
-    .wrap{margin:0 auto; height: 100%;
+h1{font-size: 56px;color: #000; text-align: center;}
+h2{font-size: 18px;color: #6a4f29; margin-top: 20px; text-align: center;}
 
+/* reset */
 
-
-        }
-
-    }
-
-
-
-
-
-
-.main{ height:100%; position: relative; background-size: cover; background-position: center;background-image: url("../images/main/visual_01.png");
-.main_wrap{
-    .gnb{
-        text-align: center;
-
-        height: 194px;
-        box-shadow: 0px 3px 1px 0 rgba( 0, 0, 0, 0.6 );
-        background-color: rgba( 0, 0, 0, 0.3 );
-
-        .header{
-            padding-top: 20px;
-            width: 1240spx;
-            height: 83px;
-            img{width: 109px; height:53px;}
-                }
-        .nav{
-            margin: 0 auto;
-            border-top: 1px  solid rgba( 255, 255, 255, 0.5);
-            border-bottom: 1px solid rgba( 255, 255, 255, 0.5);
-            width: 1240px;
-            height: 42px;
-            ul{text-align: center;
-            li{line-height: 42px; color: #fff; width: 170px;
-            a{color:#fff;}
-            a:hover{text-decoration:underline;;color:#fff;}
-        }
-        }
-            }
-
-       }
-       }
-
-       .main_btn_prev{
-          width: 62px;
-          height: 62px;
-          position: absolute;
-          top:50%;
-          margin-top: -50px;
-          left:30px;
-          border-radius: 10px;
-          background-color: rgba( 0, 0, 0, 0.3 );
-          text-align: center;
-          display: block;
-
-
-          svg{display:inline-block; vertical-align:middle;}
-
-        }
-        .main_btn_prev:before{
-         content:"";
-         display:inline-block;
-         height:100%;
-         vertical-align:middle;
-     }
-
-        .main_btn_next{
-           width: 62px;
-           height: 62px;
-           position: absolute;
-           top:50%;
-           margin-top: -50px;
-           right: 30px;
-           border-radius: 10px;
-           text-align: center;
-           background-color: rgba( 0, 0, 0, 0.3 );
-           display: block;
-
-           svg{display:inline-block; vertical-align:middle;}
-
-
-         }
-         .main_btn_next:before{
-          content:"";
-          display:inline-block;
-          height:100%;
-          vertical-align:middle;
-
-
-        }
-
-
-       .slogan{
-           width: 700px;height: 400px;  position: absolute; margin-left: 340px; top: 40%;
-           h1{font-size: 56px; color:#fff;line-height: 70px;
-               span{color:#f99d1b;}
-
-           }
-           h2{font-size: 18px; color:#6a4f29; margin-top: 30px; line-height: 28px}
-           div{text-align: center; margin-top:40px; display: inline-block;  width: 186px; height: 54px;  background-color:  #f99d1b;
-               a{line-height: 54px; font-size: 18px; color: #fff;}
-
-           }
-
-
-
-       }
-
-      }
-
-.product{height:130%; background-color: #ededed;
-    .product_wrap{margin: 0 auto; width: 1240px; padding-top: 100px;
-        .title{
-        h1{font-size: 56px; color: #000; text-align: center;}
-        h2{font-size: 18px; color: #6a4f29; margin-top: 20px; text-align: center;}
-        }
-        .product_menu{ margin-top: 50px; margin-bottom: 20px; font-size: 0;
-            li{background-color: #fff; color:#666; font-size: 16px; line-height: 40px;
-                width: 137px; height: 40px; outline: 1px solid #d4d4d4; text-align: center;}
-            li:hover{background-color: #f99d1b; color:#fff;}
-
-        }
-        .product_photo{text-align: center; font-size: 0;
-            ul{width: 102%;
-            li{ width: 295px; height: 295px; margin-right: 20px; margin-top: 20px;background-image: url("../images/main/product_photo_01.png");
-            li:hover{background-color: #f99d1b;}
-        }
-        }
-
-
-    }
+*{margin: 0;padding:0;
+    outline: 1px solid pink;
 }
 
-}
-
-.news{height:100%; background-color: #f8f6f2;
-    .news_wrap{margin: 0 auto;width: 1240px; text-align: center;padding-top: 100px;height: 100%;
-        .title{
-        h1{font-size: 56px; color: #000;}
-        h2{font-size: 18px; color: #6a4f29; margin-top: 20px;}
-        }
-        section{margin-top: 100px;display: block; width: 102%; text-align: left;font-size: 0;
-            .ad{
-                width: 610px; height: 320px; background-color: yellow;
-                margin-right: 20px; display: inline-block;
-                ul{height: 100%; width: 81px;
+ul,ol,li{list-style:none; display:inline-block;}
+a{text-decoration:none;color:#666;}
+a:hover{color:#000;}
 
 
-                        li{background-color: #a7a7a7;height: 25%; width: 100%;
-                            h2{
-                                font-size: 14px;color: #fff;line-height: 100%;text-align: center;margin-top: 43%;
-                            }
-                        }
-                        li:hover{background-color: #f99d1b;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}
+fieldset,img {border:0 none}
+dl,ul,ol,menu,li {list-style:none}
+blockquote, q {quotes: none}
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
+input,select,textarea,button {vertical-align:middle}
+button {border:0 none;background-color:transparent;cursor:pointer}
+body {background:#fff}
+body,th,td,input,select,textarea,button {font-size:16px;line-height:1.5;font-family:'nanumgothic',sans-serif;color:#333} /* color값은 디자인가이드에 맞게사용 */
 
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 
-                }
-                div{float: right;width: 529px;height: 320px;
-                    background-size: cover; background-position: center;background-image: url("../images/main/news_ad_con01.jpg");
-                }
-
-            }
-            .notice{
-                width: 295px; height: 320px; background-color: #fff; outline: 1px solid #d4d4d4;
-                display: inline-block; margin-right: 20px; vertical-align: top;
-                .tab{
-                    width: 100%; height: 40px; font-size: 14px;background-color: #c7c7c7;
-                    ul{ width: 100%; font-size: 0;
-                        li{width: 50%; height:40px;display: inline-block;font-size: 14px;text-align: center; line-height: 40px;
-                            a{color:#fff;}
-                            a:hover{color:#000;}
-                        }
-                        li:hover{background-color: #f99d1b;}
-
-                }
-
-
-                }
-                #notice_01{width: 100%;height: 100p%display: block;color: #666;
-                    ul{
-                        margin-left: 20px;margin-top: 20px;
-                        li{font-size: 14px;line-height: 30px;display: block;}
-                    }
-                }
-                #notice_02{width: 100%;height: 100p%display: block;color: #666; display: none;
-                    ul{
-                        margin-left: 20px;margin-top: 20px;
-                        li{font-size: 14px;line-height: 30px;display: block;}
-                    }
-                }
-            }
-            .event{
-                width: 295px; height: 320px; background-color: yellow; z-index: 1;
-                display: inline-block;background-size: cover; background-position: center;background-image: url("../images/main/news_event_con01.jpg");vertical-align: top;
-                h2{text-align: center; line-height: 40px;font-size: 14px;width: 100%; height: 40px; background-color: rgba( 0, 0, 0, 0.3 ); z-index: 100;}
-            }
-            .story{
-                width: 295px; height: 200px; background-color: yellow; z-index: 1;
-                display: inline-block; margin-right: 20px;margin-top: 20px;background-size: cover; background-position: center;background-image: url("../images/main/news_story_con01.jpg");
-                p{width: 295px; height: 200px;background-color: rgba( 249, 157, 27, 0.3 ); z-index: 100;
-                    h2{text-align: center; line-height: 40px;font-size: 14px;width: 100%; height: 40px; background-color: rgba( 0, 0, 0, 0.3 ); z-index: 200;}
-
-                }
-            }
-            .help{
-                width: 295px; height: 200px; background-color: yellow;z-index: 1;
-                display: inline-block;margin-right: 20px;margin-top: 20px;background-size: cover; background-position: center;background-image: url("../images/main/news_help_con01.jpg");
-                div{
-                    h2{text-align: center; line-height: 40px;font-size: 14px;width: 100%; height: 40px; background-color: rgba( 0, 0, 0, 0.3 ); z-index: 100;font-size: 14px;}
-                    h2:before{
-                     content:"1";
-                     display:inline-block;
-                     height:100%;
-                     vertical-align:bottom;
-                    }
-
-             }
-            }
-            .faq{width: 610px; height: 200px; background-color: yellow;
-                display: inline-block;margin-top: 20px;vertical-align: top;
-                .tab{width: 105px;height: 100%; float: left;
-                    ul{width: 100%;
-                        a{
-                            li{background-color: #ababab;font-size: 14px;display: block;height: 50px;
-                                line-height: 50px;
-                                span{margin-left: 10px;}
-                            }
-                            li:hover{background-color: #f99d1b;
-                                // a{color: #fff;margin-left: 10px;
-                                // }
-                            }
-
-
-                        }
-                        li:hover{background-color: #f99d1bb;
-                            a{color: #fff;margin-left: 10px;
-                            }
-                        }
-                    }
-                }
-                #faq_01{margin-left: 109px; 
-                    ul{margin-left: 20px;margin-top: 20px;
-                        li{line-height: 30px;font-size: 14px;color: #666;width: 100%;
-                            a{}
-
-                        }
-                    }
-                }
-                #faq_02{margin-left: 109px;background-color: blue;display: none;
-                    ul{margin-left: 20px;margin-top: 20px;background-color: green;
-                        li{line-height: 30px;font-size: 14px;color: #666;
-                            a{
-
-                            }
-                        }
-                    }
-                }
-
-            }
-        }
-}
-
-
-}
-
-.liquor{height:100%; background-color: #e5edd3;
-    .liquor_wrap{margin: 0 auto; width: 100%; text-align: center;padding-top: 100px;
-        .title{
-        h1{font-size: 56px; color: #000;}
-        h2{font-size: 18px; color: #6a4f29; margin-top: 20px;}
-        }
-        ul li img{margin-top: 45%;}
-        ul li{width: 20%; height: 470px;display: inline-block;font-size: 16px;color: #fff;}
-        ul{width: 100%; margin-top: 100px;background-color: white; font-size: 0;
-                .story{
-                    background-size: cover; background-position: center;background-image: url("../images/main/liquor_photo_01.jpg");}
-                .business{
-                    background-size: cover; background-position: center;background-image: url("../images/main/liquor_photo_02.jpg");}
-                .study{
-                    background-size: cover; background-position: center;background-image: url("../images/main/liquor_photo_03.jpg");}
-                .mark{
-                    background-size: cover; background-position: center;background-image: url("../images/main/liquor_photo_04.jpg");}
-                .make{
-                    background-size: cover; background-position: center;background-image: url("../images/main/liquor_photo_05.jpg");}
-
-            }
-
-
-          }
-    }
 
 
 
