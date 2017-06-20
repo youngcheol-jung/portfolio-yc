@@ -24,6 +24,7 @@ h2 {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   outline: 1px solid pink;
 }
 /* line 20, assets\less\common.less */
@@ -131,7 +132,7 @@ button {
   color: #333;
 }
 /* color값은 디자인가이드에 맞게사용 */
-/* line 35, assets\less\common.less */
+/* line 36, assets\less\common.less */
 address,
 caption,
 cite,
@@ -142,29 +143,29 @@ var {
   font-style: normal;
   font-weight: normal;
 }
-/* line 41, assets\less\common.less */
+/* line 42, assets\less\common.less */
 footer .footer_wrap {
   margin: 0 auto;
   width: 1240px;
   height: 170px;
 }
-/* line 43, assets\less\common.less */
+/* line 44, assets\less\common.less */
 footer .footer_wrap div {
   border-bottom: 1px solid #d3d3d3;
   padding: 20px 0 30px;
 }
-/* line 45, assets\less\common.less */
+/* line 46, assets\less\common.less */
 footer .footer_wrap div ul li {
   color: #000;
   padding-right: 20px;
   font-size: 16px;
 }
-/* line 47, assets\less\common.less */
+/* line 48, assets\less\common.less */
 footer .footer_wrap div select {
   float: right;
   font-size: 16px;
 }
-/* line 53, assets\less\common.less */
+/* line 54, assets\less\common.less */
 footer .footer_wrap span {
   font-size: 13px;
   color: #666;
@@ -175,178 +176,111 @@ body .wrap {
   margin: 0 auto;
   height: 100%;
 }
-/* line 9, assets\less\main.less */
-.main {
-  height: 100%;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  background-image: url("../images/main/visual_01.png");
-}
-/* line 11, assets\less\main.less */
+/* line 50, assets\less\main.less */
 .main .main_wrap .gnb {
   text-align: center;
   height: 194px;
   box-shadow: 0px 3px 1px 0 rgba(0, 0, 0, 0.6);
   background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  position: absolute;
 }
-/* line 18, assets\less\main.less */
+/* line 51, assets\less\main.less */
+.main .main_wrap .gnb.on {
+  color: #000 !important;
+  height: 500px;
+  background-color: #FFF !important;
+}
+/* line 55, assets\less\main.less */
+.main .main_wrap .gnb.on .header .nav {
+  border-top: 1px  solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+/* line 59, assets\less\main.less */
+.main .main_wrap .gnb.on .header .logo a {
+  background-image: url("../images/main/logo_on.png");
+}
+/* line 71, assets\less\main.less */
 .main .main_wrap .gnb .header {
+  margin: 0 auto;
   padding-top: 20px;
-  width: 1240spx;
+  width: 1240px;
   height: 83px;
 }
-/* line 22, assets\less\main.less */
-.main .main_wrap .gnb .header img {
+/* line 77, assets\less\main.less */
+.main .main_wrap .gnb .header .logo a {
+  display: inline-block;
   width: 109px;
   height: 53px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/main/logo_1.png");
 }
-/* line 24, assets\less\main.less */
+/* line 84, assets\less\main.less */
 .main .main_wrap .gnb .nav {
-  margin: 0 auto;
+  margin-top: 30px;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   width: 1240px;
   height: 42px;
 }
-/* line 30, assets\less\main.less */
+/* line 90, assets\less\main.less */
 .main .main_wrap .gnb .nav ul {
   text-align: center;
+  width: 100%;
 }
-/* line 31, assets\less\main.less */
+/* line 91, assets\less\main.less */
 .main .main_wrap .gnb .nav ul li {
   line-height: 42px;
   color: #fff;
-  width: 170px;
+  width: 16.666%;
+  vertical-align: top;
+  display: inline-block;
+  float: left;
 }
-/* line 32, assets\less\main.less */
+/* line 92, assets\less\main.less */
+.main .main_wrap .gnb .nav ul li a {
+  color: #fff;
+}
+/* line 93, assets\less\main.less */
 .main .main_wrap .gnb .nav ul li .twoD {
   z-index: 1;
-  padding-top: 39px;
   width: 100%;
-  height: 154px;
-  box-sizing: border-box;
-  height: 30px;
+  vertical-align: top;
+  line-height: 33px;
+  height: 350px;
+  display: none;
+  margin-top: 30px;
 }
-/* line 33, assets\less\main.less */
+/* line 94, assets\less\main.less */
 .main .main_wrap .gnb .nav ul li .twoD a {
   display: block;
   font-size: 15px;
   color: #555;
   margin-bottom: 14px;
 }
-/* line 34, assets\less\main.less */
+/* line 95, assets\less\main.less */
 .main .main_wrap .gnb .nav ul li .twoD a.on {
   color: #0068b7;
 }
-/* line 36, assets\less\main.less */
-.main .main_wrap .gnb .nav ul li a {
-  color: #fff;
-}
-/* line 37, assets\less\main.less */
-.main .main_wrap .gnb .nav ul li a:hover {
-  text-decoration: underline;
-  color: #fff;
-}
-/* line 47, assets\less\main.less */
-.main .main_btn_prev {
-  width: 62px;
-  height: 62px;
-  position: absolute;
-  top: 50%;
-  margin-top: -50px;
-  left: 30px;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.3);
-  text-align: center;
-  display: block;
-}
-/* line 60, assets\less\main.less */
-.main .main_btn_prev svg {
-  display: inline-block;
-  vertical-align: middle;
-}
-/* line 63, assets\less\main.less */
-.main .main_btn_prev:before {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
-/* line 70, assets\less\main.less */
-.main .main_btn_next {
-  width: 62px;
-  height: 62px;
-  position: absolute;
-  top: 50%;
-  margin-top: -50px;
-  right: 30px;
-  border-radius: 10px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.3);
-  display: block;
-}
-/* line 82, assets\less\main.less */
-.main .main_btn_next svg {
-  display: inline-block;
-  vertical-align: middle;
-}
-/* line 86, assets\less\main.less */
-.main .main_btn_next:before {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
-/* line 96, assets\less\main.less */
-.main .slogan {
-  width: 700px;
-  height: 400px;
-  position: absolute;
-  margin-left: 340px;
-  top: 40%;
-}
-/* line 98, assets\less\main.less */
-.main .slogan h1 {
-  text-align: left;
-}
-/* line 99, assets\less\main.less */
-.main .slogan h1 span {
-  color: #f99d1b;
-}
-/* line 103, assets\less\main.less */
-.main .slogan div {
-  text-align: center;
-  margin-top: 40px;
-  display: inline-block;
-  width: 186px;
-  height: 54px;
-  background-color: #f99d1b;
-}
-/* line 104, assets\less\main.less */
-.main .slogan div a {
-  line-height: 54px;
-  font-size: 18px;
-  color: #fff;
-}
-/* line 118, assets\less\main.less */
+/* line 116, assets\less\main.less */
 .product {
   height: 130%;
   background-color: #ededed;
 }
-/* line 119, assets\less\main.less */
+/* line 117, assets\less\main.less */
 .product .product_wrap {
   margin: 0 auto;
   width: 1240px;
   padding-top: 100px;
 }
-/* line 124, assets\less\main.less */
+/* line 122, assets\less\main.less */
 .product .product_wrap .product_menu {
   margin-top: 50px;
   margin-bottom: 20px;
   font-size: 0;
 }
-/* line 125, assets\less\main.less */
+/* line 123, assets\less\main.less */
 .product .product_wrap .product_menu li {
   background-color: #fff;
   color: #666;
@@ -357,21 +291,21 @@ body .wrap {
   outline: 1px solid #d4d4d4;
   text-align: center;
 }
-/* line 127, assets\less\main.less */
+/* line 125, assets\less\main.less */
 .product .product_wrap .product_menu li:hover {
   background-color: #f99d1b;
   color: #fff;
 }
-/* line 130, assets\less\main.less */
+/* line 128, assets\less\main.less */
 .product .product_wrap .product_photo {
   text-align: center;
   font-size: 0;
 }
-/* line 131, assets\less\main.less */
+/* line 129, assets\less\main.less */
 .product .product_wrap .product_photo ul {
   width: 102%;
 }
-/* line 132, assets\less\main.less */
+/* line 130, assets\less\main.less */
 .product .product_wrap .product_photo ul li {
   width: 295px;
   height: 295px;
@@ -379,16 +313,16 @@ body .wrap {
   margin-top: 20px;
   background-image: url("../images/main/product_photo_01.png");
 }
-/* line 133, assets\less\main.less */
+/* line 131, assets\less\main.less */
 .product .product_wrap .product_photo ul li li:hover {
   background-color: #f99d1b;
 }
-/* line 143, assets\less\main.less */
+/* line 141, assets\less\main.less */
 .news {
   height: 100%;
   background-color: #f8f6f2;
 }
-/* line 144, assets\less\main.less */
+/* line 142, assets\less\main.less */
 .news .news_wrap {
   margin: 0 auto;
   width: 1240px;
@@ -396,7 +330,7 @@ body .wrap {
   padding-top: 100px;
   height: 100%;
 }
-/* line 149, assets\less\main.less */
+/* line 147, assets\less\main.less */
 .news .news_wrap section {
   margin-top: 100px;
   display: block;
@@ -404,7 +338,7 @@ body .wrap {
   text-align: left;
   font-size: 0;
 }
-/* line 150, assets\less\main.less */
+/* line 148, assets\less\main.less */
 .news .news_wrap section .ad {
   width: 610px;
   height: 320px;
@@ -412,18 +346,18 @@ body .wrap {
   margin-right: 20px;
   display: inline-block;
 }
-/* line 153, assets\less\main.less */
+/* line 151, assets\less\main.less */
 .news .news_wrap section .ad ul {
   height: 100%;
   width: 81px;
 }
-/* line 156, assets\less\main.less */
+/* line 154, assets\less\main.less */
 .news .news_wrap section .ad ul li {
   background-color: #a7a7a7;
   height: 25%;
   width: 100%;
 }
-/* line 157, assets\less\main.less */
+/* line 155, assets\less\main.less */
 .news .news_wrap section .ad ul li h2 {
   font-size: 14px;
   color: #fff;
@@ -431,11 +365,11 @@ body .wrap {
   text-align: center;
   margin-top: 43%;
 }
-/* line 161, assets\less\main.less */
+/* line 159, assets\less\main.less */
 .news .news_wrap section .ad ul li:hover {
   background-color: #f99d1b;
 }
-/* line 165, assets\less\main.less */
+/* line 163, assets\less\main.less */
 .news .news_wrap section .ad div {
   float: right;
   width: 529px;
@@ -444,7 +378,7 @@ body .wrap {
   background-position: center;
   background-image: url("../images/main/news_ad_con01.jpg");
 }
-/* line 170, assets\less\main.less */
+/* line 168, assets\less\main.less */
 .news .news_wrap section .notice {
   width: 295px;
   height: 320px;
@@ -454,19 +388,19 @@ body .wrap {
   margin-right: 20px;
   vertical-align: top;
 }
-/* line 173, assets\less\main.less */
+/* line 171, assets\less\main.less */
 .news .news_wrap section .notice .tab {
   width: 100%;
   height: 40px;
   font-size: 14px;
   background-color: #c7c7c7;
 }
-/* line 175, assets\less\main.less */
+/* line 173, assets\less\main.less */
 .news .news_wrap section .notice .tab ul {
   width: 100%;
   font-size: 0;
 }
-/* line 176, assets\less\main.less */
+/* line 174, assets\less\main.less */
 .news .news_wrap section .notice .tab ul li {
   width: 50%;
   height: 40px;
@@ -475,54 +409,54 @@ body .wrap {
   text-align: center;
   line-height: 40px;
 }
-/* line 177, assets\less\main.less */
+/* line 175, assets\less\main.less */
 .news .news_wrap section .notice .tab ul li a {
   color: #fff;
 }
-/* line 178, assets\less\main.less */
+/* line 176, assets\less\main.less */
 .news .news_wrap section .notice .tab ul li a:hover {
   color: #000;
 }
-/* line 180, assets\less\main.less */
+/* line 178, assets\less\main.less */
 .news .news_wrap section .notice .tab ul li:hover {
   background-color: #f99d1b;
 }
-/* line 186, assets\less\main.less */
+/* line 184, assets\less\main.less */
 .news .news_wrap section .notice #notice_01 {
   width: 100%;
   height: 100p%display: block;
   color: #666;
 }
-/* line 187, assets\less\main.less */
+/* line 185, assets\less\main.less */
 .news .news_wrap section .notice #notice_01 ul {
   margin-left: 20px;
   margin-top: 20px;
 }
-/* line 189, assets\less\main.less */
+/* line 187, assets\less\main.less */
 .news .news_wrap section .notice #notice_01 ul li {
   font-size: 14px;
   line-height: 30px;
   display: block;
 }
-/* line 192, assets\less\main.less */
+/* line 190, assets\less\main.less */
 .news .news_wrap section .notice #notice_02 {
   width: 100%;
   height: 100p%display: block;
   color: #666;
   display: none;
 }
-/* line 193, assets\less\main.less */
+/* line 191, assets\less\main.less */
 .news .news_wrap section .notice #notice_02 ul {
   margin-left: 20px;
   margin-top: 20px;
 }
-/* line 195, assets\less\main.less */
+/* line 193, assets\less\main.less */
 .news .news_wrap section .notice #notice_02 ul li {
   font-size: 14px;
   line-height: 30px;
   display: block;
 }
-/* line 199, assets\less\main.less */
+/* line 197, assets\less\main.less */
 .news .news_wrap section .event {
   width: 295px;
   height: 320px;
@@ -534,7 +468,7 @@ body .wrap {
   background-image: url("../images/main/news_event_con01.jpg");
   vertical-align: top;
 }
-/* line 202, assets\less\main.less */
+/* line 200, assets\less\main.less */
 .news .news_wrap section .event h2 {
   text-align: center;
   line-height: 40px;
@@ -544,7 +478,7 @@ body .wrap {
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 100;
 }
-/* line 204, assets\less\main.less */
+/* line 202, assets\less\main.less */
 .news .news_wrap section .story {
   width: 295px;
   height: 200px;
@@ -557,12 +491,12 @@ body .wrap {
   background-position: center;
   background-image: url("../images/main/news_story_con01.jpg");
 }
-/* line 207, assets\less\main.less */
+/* line 205, assets\less\main.less */
 .news .news_wrap section .story div {
   width: 100%;
   height: 100%;
 }
-/* line 208, assets\less\main.less */
+/* line 206, assets\less\main.less */
 .news .news_wrap section .story div h2 {
   text-align: center;
   line-height: 40px;
@@ -572,13 +506,13 @@ body .wrap {
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 200;
 }
-/* line 211, assets\less\main.less */
+/* line 209, assets\less\main.less */
 .news .news_wrap section .story div:hover {
   width: 100%;
   height: 100%;
   background-color: rgba(249, 157, 27, 0.3);
 }
-/* line 212, assets\less\main.less */
+/* line 210, assets\less\main.less */
 .news .news_wrap section .story div:hover h2 {
   text-align: center;
   line-height: 40px;
@@ -588,7 +522,7 @@ body .wrap {
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 200;
 }
-/* line 216, assets\less\main.less */
+/* line 214, assets\less\main.less */
 .news .news_wrap section .help {
   width: 295px;
   height: 200px;
@@ -601,7 +535,7 @@ body .wrap {
   background-position: center;
   background-image: url("../images/main/news_help_con01.jpg");
 }
-/* line 220, assets\less\main.less */
+/* line 218, assets\less\main.less */
 .news .news_wrap section .help div h2 {
   text-align: center;
   line-height: 40px;
@@ -611,14 +545,14 @@ body .wrap {
   z-index: 100;
   font-size: 14px;
 }
-/* line 221, assets\less\main.less */
+/* line 219, assets\less\main.less */
 .news .news_wrap section .help div h2:before {
   content: "";
   display: inline-block;
   height: 100%;
   vertical-align: bottom;
 }
-/* line 230, assets\less\main.less */
+/* line 228, assets\less\main.less */
 .news .news_wrap section .faq {
   width: 610px;
   height: 200px;
@@ -627,17 +561,17 @@ body .wrap {
   margin-top: 20px;
   vertical-align: top;
 }
-/* line 232, assets\less\main.less */
+/* line 230, assets\less\main.less */
 .news .news_wrap section .faq .tab {
   width: 105px;
   height: 100%;
   float: left;
 }
-/* line 233, assets\less\main.less */
+/* line 231, assets\less\main.less */
 .news .news_wrap section .faq .tab ul {
   width: 100%;
 }
-/* line 235, assets\less\main.less */
+/* line 233, assets\less\main.less */
 .news .news_wrap section .faq .tab ul li {
   background-color: #ababab;
   font-size: 14px;
@@ -645,70 +579,70 @@ body .wrap {
   height: 50px;
   line-height: 50px;
 }
-/* line 237, assets\less\main.less */
+/* line 235, assets\less\main.less */
 .news .news_wrap section .faq .tab ul li a {
   display: block;
   padding-left: 20px;
 }
-/* line 243, assets\less\main.less */
+/* line 241, assets\less\main.less */
 .news .news_wrap section .faq .tab ul li:hover {
   background-color: #f99d1b;
 }
-/* line 244, assets\less\main.less */
+/* line 242, assets\less\main.less */
 .news .news_wrap section .faq .tab ul li:hover a {
   display: block;
 }
-/* line 254, assets\less\main.less */
+/* line 252, assets\less\main.less */
 .news .news_wrap section .faq #faq_01 {
   margin-left: 109px;
 }
-/* line 255, assets\less\main.less */
+/* line 253, assets\less\main.less */
 .news .news_wrap section .faq #faq_01 ul {
   margin-left: 20px;
   margin-top: 13px;
 }
-/* line 256, assets\less\main.less */
+/* line 254, assets\less\main.less */
 .news .news_wrap section .faq #faq_01 ul li {
   line-height: 30px;
   font-size: 14px;
   color: #666;
   width: 100%;
 }
-/* line 262, assets\less\main.less */
+/* line 260, assets\less\main.less */
 .news .news_wrap section .faq #faq_02 {
   margin-left: 109px;
   background-color: blue;
   display: none;
 }
-/* line 263, assets\less\main.less */
+/* line 261, assets\less\main.less */
 .news .news_wrap section .faq #faq_02 ul {
   margin-left: 20px;
   margin-top: 13px;
   background-color: green;
 }
-/* line 264, assets\less\main.less */
+/* line 262, assets\less\main.less */
 .news .news_wrap section .faq #faq_02 ul li {
   line-height: 30px;
   font-size: 14px;
   color: #666;
 }
-/* line 282, assets\less\main.less */
+/* line 280, assets\less\main.less */
 .liquor {
   height: 100%;
   background-color: #e5edd3;
 }
-/* line 283, assets\less\main.less */
+/* line 281, assets\less\main.less */
 .liquor .liquor_wrap {
   margin: 0 auto;
   width: 100%;
   text-align: center;
   padding-top: 100px;
 }
-/* line 288, assets\less\main.less */
+/* line 286, assets\less\main.less */
 .liquor .liquor_wrap ul li img {
   margin-top: 45%;
 }
-/* line 289, assets\less\main.less */
+/* line 287, assets\less\main.less */
 .liquor .liquor_wrap ul li {
   width: 20%;
   height: 470px;
@@ -716,38 +650,38 @@ body .wrap {
   font-size: 16px;
   color: #fff;
 }
-/* line 290, assets\less\main.less */
+/* line 288, assets\less\main.less */
 .liquor .liquor_wrap ul {
   width: 100%;
   margin-top: 100px;
   background-color: white;
   font-size: 0;
 }
-/* line 291, assets\less\main.less */
+/* line 289, assets\less\main.less */
 .liquor .liquor_wrap ul .story {
   background-size: cover;
   background-position: center;
   background-image: url("../images/main/liquor_photo_01.jpg");
 }
-/* line 293, assets\less\main.less */
+/* line 291, assets\less\main.less */
 .liquor .liquor_wrap ul .business {
   background-size: cover;
   background-position: center;
   background-image: url("../images/main/liquor_photo_02.jpg");
 }
-/* line 295, assets\less\main.less */
+/* line 293, assets\less\main.less */
 .liquor .liquor_wrap ul .study {
   background-size: cover;
   background-position: center;
   background-image: url("../images/main/liquor_photo_03.jpg");
 }
-/* line 297, assets\less\main.less */
+/* line 295, assets\less\main.less */
 .liquor .liquor_wrap ul .mark {
   background-size: cover;
   background-position: center;
   background-image: url("../images/main/liquor_photo_04.jpg");
 }
-/* line 299, assets\less\main.less */
+/* line 297, assets\less\main.less */
 .liquor .liquor_wrap ul .make {
   background-size: cover;
   background-position: center;

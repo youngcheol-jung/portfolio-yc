@@ -4,113 +4,111 @@ body{
 }
 
 
+// .main.slice.ul.li{position: relative; background-size: cover; background-position: center;background-image: url("../images/main/visual_01.png");}
+
+// .main.slide{
+//     width: 100%;
+//     position: relative;
+//     background-color: yellow;
+//     height: 100%;
+// }
+
+// .main_btn_prev{
+//    width: 62px;
+//    height: 62px;
+//    position: absolute;
+//    top:50%;
+//    margin-top: -50px;
+//    left:30px;
+//    border-radius: 10px;
+//    background-color: rgba( 0, 0, 0, 0.3 );
+//    text-align: center;
+//    display: block;
+//    svg{display:inline-block; vertical-align:middle;
+// }
+// .main_btn_prev:before{
+//  content:"";
+//  display:inline-block;
+//  height:100%;
+//  vertical-align:middle;
+// }
+
+// .slogan{
+//         width: 700px;height: 400px;  position: absolute; margin-left: 340px; top: 40%;
+//         h1{text-align: left;span{color:#f99d1b;}
+//         }
+//         h2{}
+//         div{text-align: center; margin-top:40px; display: inline-block;  width: 186px; height: 54px;  background-color:  #f99d1b;
+//             a{line-height: 54px; font-size: 18px; color: #fff;}
+//
+//         }
+// }
 
 
-.main{ height:100%; position: relative; background-size: cover; background-position: center;background-image: url("../images/main/visual_01.png");
-.main_wrap{
-    .gnb{
+.main{
+    .main_wrap{
+        .gnb{
+            &.on{
+            color:#000 !important;
+            height: 500px;
+            background-color: #FFF !important;
+                .header .nav{
+                border-top: 1px  solid #e1e1e1;
+                border-bottom: 1px solid #e1e1e1;
+                }
+                .header .logo a{
+                background-image: url("../images/main/logo_on.png");
+                }
+            }
         text-align: center;
-
         height: 194px;
         box-shadow: 0px 3px 1px 0 rgba( 0, 0, 0, 0.6 );
         background-color: rgba( 0, 0, 0, 0.3 );
+        z-index: 100;
+        position:absolute;
+
 
         .header{
-            padding-top: 20px;
-            width: 1240spx;
-            height: 83px;
-            img{width: 109px; height:53px;}
+        margin: 0 auto;
+        padding-top: 20px;
+        width: 1240px;
+        height: 83px;
+            .logo{
+                a{
+                display: inline-block;width: 109px; height:53px;
+                background-size: cover; background-position: center;background-image: url("../images/main/logo_1.png");
                 }
-        .nav{
-            margin: 0 auto;
+            }
+        }
+
+            .nav{
+            margin-top: 30px;
             border-top: 1px  solid rgba( 255, 255, 255, 0.5);
             border-bottom: 1px solid rgba( 255, 255, 255, 0.5);
             width: 1240px;
             height: 42px;
-            ul{text-align: center;
-            li{line-height: 42px; color: #fff; width: 170px;
-                .twoD{z-index:1; padding-top:39px; width:100%; height:154px; box-sizing:border-box;height: 30px;}
-                .twoD a{display:block; font-size:15px; color:#555; margin-bottom:14px;}
-                .twoD a.on{color:#0068b7;}
-
-            a{color:#fff;}
-            a:hover{text-decoration:underline;color:#fff;}
-
-
-        }
-        }
-            }
-
-       }
-       }
-
-       .main_btn_prev{
-          width: 62px;
-          height: 62px;
-          position: absolute;
-          top:50%;
-          margin-top: -50px;
-          left:30px;
-          border-radius: 10px;
-          background-color: rgba( 0, 0, 0, 0.3 );
-          text-align: center;
-          display: block;
+                ul{text-align: center; width:100%;
+                    li{line-height: 42px; color: #fff; width:16.666%;vertical-align: top;display:inline-block; float:left;
+                        a{color: #fff;}
+                        .twoD{z-index:1; width:100%; vertical-align: top;line-height: 33px;height: 350px;display:none;margin-top: 30px;}
+                        .twoD a{display:block; font-size:15px; color:#555; margin-bottom:14px;}
+                        .twoD a.on{color:#0068b7;}
+                    }
+                }
+            }//nav end
 
 
-          svg{display:inline-block; vertical-align:middle;}
-
-        }
-        .main_btn_prev:before{
-         content:"";
-         display:inline-block;
-         height:100%;
-         vertical-align:middle;
-     }
-
-        .main_btn_next{
-           width: 62px;
-           height: 62px;
-           position: absolute;
-           top:50%;
-           margin-top: -50px;
-           right: 30px;
-           border-radius: 10px;
-           text-align: center;
-           background-color: rgba( 0, 0, 0, 0.3 );
-           display: block;
-
-           svg{display:inline-block; vertical-align:middle;}
-
-
-         }
-         .main_btn_next:before{
-          content:"";
-          display:inline-block;
-          height:100%;
-          vertical-align:middle;
-
-
-        }
-
-
-       .slogan{
-           width: 700px;height: 400px;  position: absolute; margin-left: 340px; top: 40%;
-           h1{text-align: left;
-               span{color:#f99d1b;}
-
-           }
-           h2{}
-           div{text-align: center; margin-top:40px; display: inline-block;  width: 186px; height: 54px;  background-color:  #f99d1b;
-               a{line-height: 54px; font-size: 18px; color: #fff;}
-
-           }
+        } //gnb end
+    } //main_wrap end
+} //main end
 
 
 
 
-       }
 
-      }
+
+
+
 
 
 // ------------------------------------------------------제품소개----------------------------------------------
