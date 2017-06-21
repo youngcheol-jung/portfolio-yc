@@ -8,6 +8,24 @@ module.exports = function(grunt) {
             port: 9000
         }
     },
+
+
+    // HTML Task
+    // grunt-htmlhint : html 구문검사(아톰에 린트과 비슷한기능)
+    // grunt-includes : html 인크루드 사용
+    includes:{
+        dist:{
+            cwd:'src/views/',
+            src:['**/*.html'],
+            dest:'dist/views/',
+            options:{
+                flatten:true,
+                includePath:'src/views/includes/'
+            }
+        }
+    },
+
+
     less: {
         min: {
         options: {
@@ -43,8 +61,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-serve');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-includes');
 
   // Default task(s).
   grunt.registerTask('default', ['serve']);
+
 
 };

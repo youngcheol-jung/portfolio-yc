@@ -33,20 +33,11 @@ body{
 //  vertical-align:middle;
 // }
 
-// .slogan{
-//         width: 700px;height: 400px;  position: absolute; margin-left: 340px; top: 40%;
-//         h1{text-align: left;span{color:#f99d1b;}
-//         }
-//         h2{}
-//         div{text-align: center; margin-top:40px; display: inline-block;  width: 186px; height: 54px;  background-color:  #f99d1b;
-//             a{line-height: 54px; font-size: 18px; color: #fff;}
-//
-//         }
-// }
 
 
-.main{
-    .main_wrap{
+
+.main{width: 100%; height: 100%; position: relative;z-index: 1;
+    .main_wrap{margin: 0 auto;
         .gnb{
             &.on{
             color:#000 !important;
@@ -64,8 +55,8 @@ body{
         height: 194px;
         box-shadow: 0px 3px 1px 0 rgba( 0, 0, 0, 0.6 );
         background-color: rgba( 0, 0, 0, 0.3 );
-        z-index: 100;
-        position:absolute;
+        z-index: 200;
+        position: relative;
 
 
         .header{
@@ -95,12 +86,55 @@ body{
                         .twoD a.on{color:#0068b7;}
                     }
                 }
-            }//nav end
-
-
+            } //nav end
         } //gnb end
     } //main_wrap end
 } //main end
+
+.slice_wrap .slice{
+    width: 100%;height: 100%;  position: absolute; top:0;
+
+    }
+
+.slice_wrap .slice li{
+    background-size: cover; background-position: center;background-image: url("../images/main/visual_01.png");
+    top:0;width: 100%;height: 100%;
+
+}
+.slice_wrap .slice li:nth-child(2){
+    background-size: cover; background-position: center;background-image: url("../images/main/visual_02.png");
+    z-index: 100; position: absolute;top:0;width: 100%;height: 100%;
+
+}
+
+
+.slice_wrap{
+    width: 100%;
+    height: 100%;
+
+
+
+}
+
+
+.slogan{
+    position: absolute;
+    z-index: 300;
+    width: 1240px;
+    background-color: yellow;
+    margin-top: 400px;
+    margin-left: 324px                                                                                                                                                                                                                     ;
+    h1{
+        text-align: left;span{color:#f99d1b;
+        }
+    }
+    div{text-align: center; margin-top:40px; display: inline-block;  width: 186px; height: 54px;  background-color:  #f99d1b;
+        a{line-height: 54px; font-size: 18px; color: #fff;}
+}
+
+
+}
+
 
 
 

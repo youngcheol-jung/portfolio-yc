@@ -176,38 +176,49 @@ body .wrap {
   margin: 0 auto;
   height: 100%;
 }
-/* line 50, assets\less\main.less */
+/* line 39, assets\less\main.less */
+.main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+/* line 40, assets\less\main.less */
+.main .main_wrap {
+  margin: 0 auto;
+}
+/* line 41, assets\less\main.less */
 .main .main_wrap .gnb {
   text-align: center;
   height: 194px;
   box-shadow: 0px 3px 1px 0 rgba(0, 0, 0, 0.6);
   background-color: rgba(0, 0, 0, 0.3);
-  z-index: 100;
-  position: absolute;
+  z-index: 200;
+  position: relative;
 }
-/* line 51, assets\less\main.less */
+/* line 42, assets\less\main.less */
 .main .main_wrap .gnb.on {
   color: #000 !important;
   height: 500px;
   background-color: #FFF !important;
 }
-/* line 55, assets\less\main.less */
+/* line 46, assets\less\main.less */
 .main .main_wrap .gnb.on .header .nav {
   border-top: 1px  solid #e1e1e1;
   border-bottom: 1px solid #e1e1e1;
 }
-/* line 59, assets\less\main.less */
+/* line 50, assets\less\main.less */
 .main .main_wrap .gnb.on .header .logo a {
   background-image: url("../images/main/logo_on.png");
 }
-/* line 71, assets\less\main.less */
+/* line 62, assets\less\main.less */
 .main .main_wrap .gnb .header {
   margin: 0 auto;
   padding-top: 20px;
   width: 1240px;
   height: 83px;
 }
-/* line 77, assets\less\main.less */
+/* line 68, assets\less\main.less */
 .main .main_wrap .gnb .header .logo a {
   display: inline-block;
   width: 109px;
@@ -216,7 +227,7 @@ body .wrap {
   background-position: center;
   background-image: url("../images/main/logo_1.png");
 }
-/* line 84, assets\less\main.less */
+/* line 75, assets\less\main.less */
 .main .main_wrap .gnb .nav {
   margin-top: 30px;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -224,12 +235,12 @@ body .wrap {
   width: 1240px;
   height: 42px;
 }
-/* line 90, assets\less\main.less */
+/* line 81, assets\less\main.less */
 .main .main_wrap .gnb .nav ul {
   text-align: center;
   width: 100%;
 }
-/* line 91, assets\less\main.less */
+/* line 82, assets\less\main.less */
 .main .main_wrap .gnb .nav ul li {
   line-height: 42px;
   color: #fff;
@@ -238,11 +249,11 @@ body .wrap {
   display: inline-block;
   float: left;
 }
-/* line 92, assets\less\main.less */
+/* line 83, assets\less\main.less */
 .main .main_wrap .gnb .nav ul li a {
   color: #fff;
 }
-/* line 93, assets\less\main.less */
+/* line 84, assets\less\main.less */
 .main .main_wrap .gnb .nav ul li .twoD {
   z-index: 1;
   width: 100%;
@@ -252,35 +263,99 @@ body .wrap {
   display: none;
   margin-top: 30px;
 }
-/* line 94, assets\less\main.less */
+/* line 85, assets\less\main.less */
 .main .main_wrap .gnb .nav ul li .twoD a {
   display: block;
   font-size: 15px;
   color: #555;
   margin-bottom: 14px;
 }
-/* line 95, assets\less\main.less */
+/* line 86, assets\less\main.less */
 .main .main_wrap .gnb .nav ul li .twoD a.on {
   color: #0068b7;
 }
-/* line 116, assets\less\main.less */
+/* line 94, assets\less\main.less */
+.slice_wrap .slice {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+/* line 99, assets\less\main.less */
+.slice_wrap .slice li {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/main/visual_01.png");
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 104, assets\less\main.less */
+.slice_wrap .slice li:nth-child(2) {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/main/visual_02.png");
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 111, assets\less\main.less */
+.slice_wrap {
+  width: 100%;
+  height: 100%;
+}
+/* line 120, assets\less\main.less */
+.slogan {
+  position: absolute;
+  z-index: 300;
+  width: 1240px;
+  background-color: yellow;
+  margin-top: 400px;
+  margin-left: 324px                                                                                                                                                                                                                     ;
+}
+/* line 127, assets\less\main.less */
+.slogan h1 {
+  text-align: left;
+}
+/* line 128, assets\less\main.less */
+.slogan h1 span {
+  color: #f99d1b;
+}
+/* line 131, assets\less\main.less */
+.slogan div {
+  text-align: center;
+  margin-top: 40px;
+  display: inline-block;
+  width: 186px;
+  height: 54px;
+  background-color: #f99d1b;
+}
+/* line 132, assets\less\main.less */
+.slogan div a {
+  line-height: 54px;
+  font-size: 18px;
+  color: #fff;
+}
+/* line 150, assets\less\main.less */
 .product {
   height: 130%;
   background-color: #ededed;
 }
-/* line 117, assets\less\main.less */
+/* line 151, assets\less\main.less */
 .product .product_wrap {
   margin: 0 auto;
   width: 1240px;
   padding-top: 100px;
 }
-/* line 122, assets\less\main.less */
+/* line 156, assets\less\main.less */
 .product .product_wrap .product_menu {
   margin-top: 50px;
   margin-bottom: 20px;
   font-size: 0;
 }
-/* line 123, assets\less\main.less */
+/* line 157, assets\less\main.less */
 .product .product_wrap .product_menu li {
   background-color: #fff;
   color: #666;
@@ -291,21 +366,21 @@ body .wrap {
   outline: 1px solid #d4d4d4;
   text-align: center;
 }
-/* line 125, assets\less\main.less */
+/* line 159, assets\less\main.less */
 .product .product_wrap .product_menu li:hover {
   background-color: #f99d1b;
   color: #fff;
 }
-/* line 128, assets\less\main.less */
+/* line 162, assets\less\main.less */
 .product .product_wrap .product_photo {
   text-align: center;
   font-size: 0;
 }
-/* line 129, assets\less\main.less */
+/* line 163, assets\less\main.less */
 .product .product_wrap .product_photo ul {
   width: 102%;
 }
-/* line 130, assets\less\main.less */
+/* line 164, assets\less\main.less */
 .product .product_wrap .product_photo ul li {
   width: 295px;
   height: 295px;
@@ -313,16 +388,16 @@ body .wrap {
   margin-top: 20px;
   background-image: url("../images/main/product_photo_01.png");
 }
-/* line 131, assets\less\main.less */
+/* line 165, assets\less\main.less */
 .product .product_wrap .product_photo ul li li:hover {
   background-color: #f99d1b;
 }
-/* line 141, assets\less\main.less */
+/* line 175, assets\less\main.less */
 .news {
   height: 100%;
   background-color: #f8f6f2;
 }
-/* line 142, assets\less\main.less */
+/* line 176, assets\less\main.less */
 .news .news_wrap {
   margin: 0 auto;
   width: 1240px;
@@ -330,7 +405,7 @@ body .wrap {
   padding-top: 100px;
   height: 100%;
 }
-/* line 147, assets\less\main.less */
+/* line 181, assets\less\main.less */
 .news .news_wrap section {
   margin-top: 100px;
   display: block;
@@ -338,7 +413,7 @@ body .wrap {
   text-align: left;
   font-size: 0;
 }
-/* line 148, assets\less\main.less */
+/* line 182, assets\less\main.less */
 .news .news_wrap section .ad {
   width: 610px;
   height: 320px;
@@ -346,18 +421,18 @@ body .wrap {
   margin-right: 20px;
   display: inline-block;
 }
-/* line 151, assets\less\main.less */
+/* line 185, assets\less\main.less */
 .news .news_wrap section .ad ul {
   height: 100%;
   width: 81px;
 }
-/* line 154, assets\less\main.less */
+/* line 188, assets\less\main.less */
 .news .news_wrap section .ad ul li {
   background-color: #a7a7a7;
   height: 25%;
   width: 100%;
 }
-/* line 155, assets\less\main.less */
+/* line 189, assets\less\main.less */
 .news .news_wrap section .ad ul li h2 {
   font-size: 14px;
   color: #fff;
@@ -365,11 +440,11 @@ body .wrap {
   text-align: center;
   margin-top: 43%;
 }
-/* line 159, assets\less\main.less */
+/* line 193, assets\less\main.less */
 .news .news_wrap section .ad ul li:hover {
   background-color: #f99d1b;
 }
-/* line 163, assets\less\main.less */
+/* line 197, assets\less\main.less */
 .news .news_wrap section .ad div {
   float: right;
   width: 529px;
@@ -378,7 +453,7 @@ body .wrap {
   background-position: center;
   background-image: url("../images/main/news_ad_con01.jpg");
 }
-/* line 168, assets\less\main.less */
+/* line 202, assets\less\main.less */
 .news .news_wrap section .notice {
   width: 295px;
   height: 320px;
@@ -388,19 +463,19 @@ body .wrap {
   margin-right: 20px;
   vertical-align: top;
 }
-/* line 171, assets\less\main.less */
+/* line 205, assets\less\main.less */
 .news .news_wrap section .notice .tab {
   width: 100%;
   height: 40px;
   font-size: 14px;
   background-color: #c7c7c7;
 }
-/* line 173, assets\less\main.less */
+/* line 207, assets\less\main.less */
 .news .news_wrap section .notice .tab ul {
   width: 100%;
   font-size: 0;
 }
-/* line 174, assets\less\main.less */
+/* line 208, assets\less\main.less */
 .news .news_wrap section .notice .tab ul li {
   width: 50%;
   height: 40px;
@@ -409,54 +484,54 @@ body .wrap {
   text-align: center;
   line-height: 40px;
 }
-/* line 175, assets\less\main.less */
+/* line 209, assets\less\main.less */
 .news .news_wrap section .notice .tab ul li a {
   color: #fff;
 }
-/* line 176, assets\less\main.less */
+/* line 210, assets\less\main.less */
 .news .news_wrap section .notice .tab ul li a:hover {
   color: #000;
 }
-/* line 178, assets\less\main.less */
+/* line 212, assets\less\main.less */
 .news .news_wrap section .notice .tab ul li:hover {
   background-color: #f99d1b;
 }
-/* line 184, assets\less\main.less */
+/* line 218, assets\less\main.less */
 .news .news_wrap section .notice #notice_01 {
   width: 100%;
   height: 100p%display: block;
   color: #666;
 }
-/* line 185, assets\less\main.less */
+/* line 219, assets\less\main.less */
 .news .news_wrap section .notice #notice_01 ul {
   margin-left: 20px;
   margin-top: 20px;
 }
-/* line 187, assets\less\main.less */
+/* line 221, assets\less\main.less */
 .news .news_wrap section .notice #notice_01 ul li {
   font-size: 14px;
   line-height: 30px;
   display: block;
 }
-/* line 190, assets\less\main.less */
+/* line 224, assets\less\main.less */
 .news .news_wrap section .notice #notice_02 {
   width: 100%;
   height: 100p%display: block;
   color: #666;
   display: none;
 }
-/* line 191, assets\less\main.less */
+/* line 225, assets\less\main.less */
 .news .news_wrap section .notice #notice_02 ul {
   margin-left: 20px;
   margin-top: 20px;
 }
-/* line 193, assets\less\main.less */
+/* line 227, assets\less\main.less */
 .news .news_wrap section .notice #notice_02 ul li {
   font-size: 14px;
   line-height: 30px;
   display: block;
 }
-/* line 197, assets\less\main.less */
+/* line 231, assets\less\main.less */
 .news .news_wrap section .event {
   width: 295px;
   height: 320px;
@@ -468,7 +543,7 @@ body .wrap {
   background-image: url("../images/main/news_event_con01.jpg");
   vertical-align: top;
 }
-/* line 200, assets\less\main.less */
+/* line 234, assets\less\main.less */
 .news .news_wrap section .event h2 {
   text-align: center;
   line-height: 40px;
@@ -478,7 +553,7 @@ body .wrap {
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 100;
 }
-/* line 202, assets\less\main.less */
+/* line 236, assets\less\main.less */
 .news .news_wrap section .story {
   width: 295px;
   height: 200px;
@@ -491,12 +566,12 @@ body .wrap {
   background-position: center;
   background-image: url("../images/main/news_story_con01.jpg");
 }
-/* line 205, assets\less\main.less */
+/* line 239, assets\less\main.less */
 .news .news_wrap section .story div {
   width: 100%;
   height: 100%;
 }
-/* line 206, assets\less\main.less */
+/* line 240, assets\less\main.less */
 .news .news_wrap section .story div h2 {
   text-align: center;
   line-height: 40px;
@@ -506,13 +581,13 @@ body .wrap {
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 200;
 }
-/* line 209, assets\less\main.less */
+/* line 243, assets\less\main.less */
 .news .news_wrap section .story div:hover {
   width: 100%;
   height: 100%;
   background-color: rgba(249, 157, 27, 0.3);
 }
-/* line 210, assets\less\main.less */
+/* line 244, assets\less\main.less */
 .news .news_wrap section .story div:hover h2 {
   text-align: center;
   line-height: 40px;
@@ -522,7 +597,7 @@ body .wrap {
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 200;
 }
-/* line 214, assets\less\main.less */
+/* line 248, assets\less\main.less */
 .news .news_wrap section .help {
   width: 295px;
   height: 200px;
@@ -535,7 +610,7 @@ body .wrap {
   background-position: center;
   background-image: url("../images/main/news_help_con01.jpg");
 }
-/* line 218, assets\less\main.less */
+/* line 252, assets\less\main.less */
 .news .news_wrap section .help div h2 {
   text-align: center;
   line-height: 40px;
@@ -545,14 +620,14 @@ body .wrap {
   z-index: 100;
   font-size: 14px;
 }
-/* line 219, assets\less\main.less */
+/* line 253, assets\less\main.less */
 .news .news_wrap section .help div h2:before {
   content: "";
   display: inline-block;
   height: 100%;
   vertical-align: bottom;
 }
-/* line 228, assets\less\main.less */
+/* line 262, assets\less\main.less */
 .news .news_wrap section .faq {
   width: 610px;
   height: 200px;
@@ -561,17 +636,17 @@ body .wrap {
   margin-top: 20px;
   vertical-align: top;
 }
-/* line 230, assets\less\main.less */
+/* line 264, assets\less\main.less */
 .news .news_wrap section .faq .tab {
   width: 105px;
   height: 100%;
   float: left;
 }
-/* line 231, assets\less\main.less */
+/* line 265, assets\less\main.less */
 .news .news_wrap section .faq .tab ul {
   width: 100%;
 }
-/* line 233, assets\less\main.less */
+/* line 267, assets\less\main.less */
 .news .news_wrap section .faq .tab ul li {
   background-color: #ababab;
   font-size: 14px;
@@ -579,70 +654,70 @@ body .wrap {
   height: 50px;
   line-height: 50px;
 }
-/* line 235, assets\less\main.less */
+/* line 269, assets\less\main.less */
 .news .news_wrap section .faq .tab ul li a {
   display: block;
   padding-left: 20px;
 }
-/* line 241, assets\less\main.less */
+/* line 275, assets\less\main.less */
 .news .news_wrap section .faq .tab ul li:hover {
   background-color: #f99d1b;
 }
-/* line 242, assets\less\main.less */
+/* line 276, assets\less\main.less */
 .news .news_wrap section .faq .tab ul li:hover a {
   display: block;
 }
-/* line 252, assets\less\main.less */
+/* line 286, assets\less\main.less */
 .news .news_wrap section .faq #faq_01 {
   margin-left: 109px;
 }
-/* line 253, assets\less\main.less */
+/* line 287, assets\less\main.less */
 .news .news_wrap section .faq #faq_01 ul {
   margin-left: 20px;
   margin-top: 13px;
 }
-/* line 254, assets\less\main.less */
+/* line 288, assets\less\main.less */
 .news .news_wrap section .faq #faq_01 ul li {
   line-height: 30px;
   font-size: 14px;
   color: #666;
   width: 100%;
 }
-/* line 260, assets\less\main.less */
+/* line 294, assets\less\main.less */
 .news .news_wrap section .faq #faq_02 {
   margin-left: 109px;
   background-color: blue;
   display: none;
 }
-/* line 261, assets\less\main.less */
+/* line 295, assets\less\main.less */
 .news .news_wrap section .faq #faq_02 ul {
   margin-left: 20px;
   margin-top: 13px;
   background-color: green;
 }
-/* line 262, assets\less\main.less */
+/* line 296, assets\less\main.less */
 .news .news_wrap section .faq #faq_02 ul li {
   line-height: 30px;
   font-size: 14px;
   color: #666;
 }
-/* line 280, assets\less\main.less */
+/* line 314, assets\less\main.less */
 .liquor {
   height: 100%;
   background-color: #e5edd3;
 }
-/* line 281, assets\less\main.less */
+/* line 315, assets\less\main.less */
 .liquor .liquor_wrap {
   margin: 0 auto;
   width: 100%;
   text-align: center;
   padding-top: 100px;
 }
-/* line 286, assets\less\main.less */
+/* line 320, assets\less\main.less */
 .liquor .liquor_wrap ul li img {
   margin-top: 45%;
 }
-/* line 287, assets\less\main.less */
+/* line 321, assets\less\main.less */
 .liquor .liquor_wrap ul li {
   width: 20%;
   height: 470px;
@@ -650,38 +725,38 @@ body .wrap {
   font-size: 16px;
   color: #fff;
 }
-/* line 288, assets\less\main.less */
+/* line 322, assets\less\main.less */
 .liquor .liquor_wrap ul {
   width: 100%;
   margin-top: 100px;
   background-color: white;
   font-size: 0;
 }
-/* line 289, assets\less\main.less */
+/* line 323, assets\less\main.less */
 .liquor .liquor_wrap ul .story {
   background-size: cover;
   background-position: center;
   background-image: url("../images/main/liquor_photo_01.jpg");
 }
-/* line 291, assets\less\main.less */
+/* line 325, assets\less\main.less */
 .liquor .liquor_wrap ul .business {
   background-size: cover;
   background-position: center;
   background-image: url("../images/main/liquor_photo_02.jpg");
 }
-/* line 293, assets\less\main.less */
+/* line 327, assets\less\main.less */
 .liquor .liquor_wrap ul .study {
   background-size: cover;
   background-position: center;
   background-image: url("../images/main/liquor_photo_03.jpg");
 }
-/* line 295, assets\less\main.less */
+/* line 329, assets\less\main.less */
 .liquor .liquor_wrap ul .mark {
   background-size: cover;
   background-position: center;
   background-image: url("../images/main/liquor_photo_04.jpg");
 }
-/* line 297, assets\less\main.less */
+/* line 331, assets\less\main.less */
 .liquor .liquor_wrap ul .make {
   background-size: cover;
   background-position: center;
