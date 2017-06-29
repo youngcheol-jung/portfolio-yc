@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style>
+  .p{
+      border: 1px solid #f00;position: relative;
+  }
+
+  .yellow{border: 1px solid #f00;
+      width: 300px;
+      height: 300px;
+      background-color: yellow;
+      position: absolute;
+      z-index: 10;
+    }
+
+    .green{
+        width: 100px;
+        height: 100px;
+        border: 1px solid #f00;
+        margin-top: 220px;
+        background-color: green;
+        position: absolute;
+        z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+<div class="p">
+  <div class="yellow">
+      <div class="green"></div>
+  </div>
+</div>
+
+<span>형제간에 영역은 영향은 줄수 있지만,자식이 부모형제 한테는 영향을 줄 수 없다.모든 요소가 그렇다 단 예외가 있다면 지금처럼 위드 헤이트값을 오토로 설정하는경우 즉 절대값(px)을 넣지 않는 경우 컨텐츠 만큼이기 땜문에.. </span>
+
+</body>
+</html>

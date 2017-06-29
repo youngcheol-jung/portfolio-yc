@@ -15,12 +15,12 @@ module.exports = function(grunt) {
     // grunt-includes : html 인크루드 사용
     includes:{
         dist:{
-            cwd:'src/views/',
+            cwd:'html/',
             src:['**/*.html'],
-            dest:'dist/views/',
+            dest:'dist/',
             options:{
                 flatten:true,
-                includePath:'src/views/includes/'
+                includePath:'html/include/'
             }
         }
     },

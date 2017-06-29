@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>국순당</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/javascript/main.js"></script>
+    <script type="text/javascript" src="assets/javascript/gnb.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -16,12 +16,15 @@
             <div class="gnb">
                 <div class="header">
                     <div class="logo">
-                    <a href="#"></a></div>
+                    <a href="index.html"></a></div>
                     <div class="serch"></div>
                     <div class="nav">
                         <ul>
                             <li>
-                                <a href="#">회사소개</a>
+                                <a class="oneDhover" href="html/company.html">회사소개
+                                    <span class="bottom_liner"></span>
+                                </a>
+
                                 <div class="twoD">
                                     <a href="#">국순당 개요</a>
                                     <a href="#">녹색기업</a>
@@ -33,7 +36,9 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="#">우리술 이야기</a>
+                                <a class="oneDhover" href="html/story.html">우리술 이야기
+                                    <span class="bottom_liner"></span>
+                                </a>
                                 <div class="twoD">
                                     <a href="#">우리술 알기</a>
                                     <a href="#">우리술 복원사업</a>
@@ -43,7 +48,9 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="#">제품소개</a>
+                                <a class="oneDhover" href="html/product.html">제품소개
+                                    <span class="bottom_liner"></span>
+                                </a>
                                 <div class="twoD">
                                     <a href="#">백세주</a>
                                     <a href="#">명작</a>
@@ -55,7 +62,9 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="#">홍보마당</a>
+                                <a class="oneDhover" href="html/news.html">홍보마당
+                                    <span class="bottom_liner"></span>
+                                </a>
                                 <div class="twoD">
                                     <a href="#">홍보영화</a>
                                     <a href="#">국순당소식</a>
@@ -66,7 +75,9 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="#">백세주마을</a>
+                                <a class="oneDhover" href="#">백세주마을
+                                    <span class="bottom_liner"></span>
+                                </a>
                                 <div class="twoD">
                                     <a href="#">백세주 마을</a>
                                     <a href="#">메뉴소개</a>
@@ -76,7 +87,9 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="#">인재채용</a>
+                                <a class="oneDhover" href="html/recruit.html">인재채용
+                                    <span class="bottom_liner"></span>
+                                </a>
                                 <div class="twoD">
                                     <a href="#">인재상</a>
                                     <a href="#">인재개발</a>
@@ -90,12 +103,13 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="slice_wrap">
+        </div><!--main_wrap end-->
+        <div class="slide_wrap">
            <div class="btngroup">
                <a href="#" class="main_btn_prev">
                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                     width="17px" height="32px">
+
                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
                     d="M15.822,2.802 L3.136,16.305 L15.440,29.400 C15.971,29.965 15.971,30.881 15.440,31.446 C14.909,32.011 14.048,32.011 13.518,31.446 L0.542,17.636 C0.042,17.103 0.031,16.266 0.475,15.698 C0.460,15.307 0.584,14.912 0.865,14.613 L13.892,0.748 C14.425,0.180 15.289,0.180 15.822,0.748 C16.355,1.315 16.355,2.234 15.822,2.802 Z"/>
                    </svg>
@@ -109,17 +123,32 @@
                 </a>
 
             </div>
-           <ul class="slice">
+           <ul class="slide">
                <li>
-                   <div class="slogan">
+                   <div class="slogan"><video id="videobcg" preload="auto" autoplay="true" loop="loop" volume="5"><source src="asset/images/main/visual_01.mp4" type="video/mp4">
+                       <source src="vidoe.wedm" type="video/webm">
+                       </video>
                         <h1>좋은술은<br><span>좋은자연</span>이 빛습니다.</h1>
                         <h2>우리의 누룩으로 좋은술을 빚는 집 국순당은<br> 술을 빚기 전에 먼저 사람을 생각합니다.</h2>
                         <div><a href="#">제품 바로가기</a></div>
                     </div>
+                    <!-- <li>
+                        <div class="slogan">
+                             <h1>좋은술은<br><span>좋은자연</span>이 빛습니다.</h1>
+                             <h2>우리의 누룩으로 좋은술을 빚는 집 국순당은<br> 술을 빚기 전에 먼저 사람을 생각합니다.</h2>
+                             <div><a href="#">제품 바로가기</a></div>
+                         </div>
+                    </li>
+                    <li>
+                        <div class="slogan">
+                             <h1>좋은술은<br><span>좋은자연</span>이 빛습니다.</h1>
+                             <h2>우리의 누룩으로 좋은술을 빚는 집 국순당은<br> 술을 빚기 전에 먼저 사람을 생각합니다.</h2>
+                             <div><a href="#">제품 바로가기</a></div>
+                         </div>
+                    </li> -->
                </li>
-               <li></li>
            </ul>
-       </div>
+       </div><!--slide wrap end-->
     </div>
 
     <div class="product">
