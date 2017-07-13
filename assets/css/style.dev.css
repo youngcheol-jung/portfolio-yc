@@ -1654,6 +1654,18 @@
 .con_product1_01 > img {
   margin-top: 100px;
 }
+/* line 32, assets\less\03_product.less */
+.backjo_01 .photo {
+  width: 400px;
+  background-color: yellow;
+  float: left;
+}
+/* line 35, assets\less\03_product.less */
+.backjo_01 table,
+.backjo_01 th,
+.backjo_01 td {
+  border: 1px solid black;
+}
 /* line 3, assets\less\common.less */
 html,
 body {
